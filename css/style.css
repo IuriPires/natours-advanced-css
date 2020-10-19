@@ -135,7 +135,6 @@ body {
   padding: 15px 40px;
   display: inline-block;
   border-radius: 100px;
-  animation: moveBtnUp 2s;
   transition: all 0.2s;
   position: relative;
 }
@@ -175,7 +174,12 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0;
-} 
+}
+
+.btn-animated {
+  animation: moveBtnUp .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
 
 @keyframes moveBtnUp {
   0% {
